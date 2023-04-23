@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anshumat</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .w3-sidebar a {font-family: "Roboto", sans-serif}
+      body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+      .header {
+        overflow: hidden;
+        background-color: #f1f1f1;
+        padding: 20px 10px;
+      }
+
+      .header a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px; 
+        line-height: 25px;
+        border-radius: 4px;
+      }
+
+      .header a.logo {
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .header a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .header a.active {
+        background-color: dodgerblue;
+        color: white;
+      }
+
+      .header-right {
+        float: right;
+      }
+
+      @media screen and (max-width: 500px) {
+        .header a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+  
+        .header-right {   
+          float: none;
+        }
+      }
+
+      table, th, td {
+        width: 100%
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+
+      th, td {
+        background-color: #96D4D4;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+
+      tr:hover {background-color: #D6EEEE;}
+
+      /* Rounded border */
+      hr.rounded {
+        border-top: 8px solid #bbb;
+        border-radius: 5px;
+      }
+
+      .responsive {
+        width: 100%;
+        height: auto;
+      }
+
+      img.sticky {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+      }
+
+      * {box-sizing:border-box}
+
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+      }
+
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+    </style>
+  </head>
+  <body class="w3-content" style="max-width:1200px">
+    <div class="w3-container w3-text-grey" id="chit-chat">
+      <table>
+        <tr><th><b>Chit-Chat Corner</b></th></tr>
+      </table>
+      <br>
+      <h3 class="w3-wide" align="center"><b>DIRECTOR SLIET PROF. SHAILENDRA JAIN: SLIET MODEL & ITs CAPABILITY TO GO HIGHER</b></h3>
+      <div style="text-align:left">
+        <img src="./images/dir.jpg" style="float: left; margin-right:2%; width:40%;">
+        <!-- <p>“पद का अर्थ है जिम्मेदारी”</p> -->
+      </div>
+
+      <p>Prof. Shailendra Jain joined as Director, SLIET and has been serving the Institute since 3rd Nov., 2017. He is on deputation from Maulana Azad NIT, Bhopal where he is a Professor in Electrical Engineering.</p>
+      <p>Here are some excerpts from ANSHUMAT interview with Prof. Shailendra Jain, Director , SLIET in dialogue with Dr. Sanjeev Kumar Garg , Editor-in-Chief of the newsletter:</p>
+      <p><b>ANSHUMAT Q. 1: Please share your experience with SLIET as Director for the last five years.</b></p>
+      <p><b>Director:</b> SLIET is an Institute with ample potential and much of it still untapped. It is a CFTI at par with NITs and IIITs with a unique mandate of catering to demand of technical manpower at various levels, with its innovative multi-entry, multi-exit modular pattern of education since 1991, in line with the national education policy NEP 2020. With its sprawling campus, natural beauty and ambience, deemed-to-university status, competent faculty and staff , SLIET is poised to take giant leaps in the technical education. Joined with a zeal to serve the institution as academic administrator, I feel privileged being at the helm of this Institute for the last five years.</p>
+
+      <p><b>ANSHUMAT Q. 2: What are the core strengths of SLIET as a technical Institution?</b></p>
+      <p><b>Director:</b> The core strengths of SLIET are:
+        <br>
+        <ol>
+          <li>A unique mandate to fetch students from Class 10th, in the main stream of technical education, through skill development,</li>
+          <li>A unique course structure with more emphasis on practical/training,</li>
+          <li>Fully funded by central government with deemed-to-be-university status,</li>
+          <li>Well integrated with national-level institutes by offering entry in 4-year degree programmes (since 2014),</li>
+          <li>Affordable fee structure suitable for all strata of society,</li>
+          <li>The educational programmes of SLIET are innovative, practical and contain all aspects of National Education Policy 2020,</li>
+          <li>Ideal education environment, with excellent unmatchable infrastructure, lush green campus with natural beauty,</li>
+          <li>Fully residential campus, well qualified faculty and staff.</li>
+        </ol>
+        I strongly believe that SLIET has the capability to achieve newer heights in future.
+      </p>
+
+      <p><b>ANSHUMAT Q.3: Anything you feel SLIET could have been done better?</b></p>
+      <p><b>Director:</b> Every leading institution has its own evolution periodwith ups & down. I feel till date journey of SLIET is its evolution period. Today, SLIET has reached to a position to start delivering as expected. SLIET could do better in skill development with its unique concept, which is currently in re-structuring phase.  Developing an eco-system of need-based research and consultancy, owing to its excellent expert faculty, could be another. All this will help in projecting itself at national map, better NIRF ranking, and NAAC/NBA accreditation.</p>
+
+      <p><b>ANSHUMAT Q.4: What do you think are some of the challenges being faced by SLIET while trying to be in the league of top Engineering Institutions in the country?</b></p>
+      <p><b>Director:</b>Effective leadership, stable governance, rural location, availability of education in urban areas, social stigma to earn graduation degree rather than skill, lack of ownership etc. were a few challenges SLIET has faced. In spite of 33 years old CFTI, lack of status “Institute of National Importance (INI)”, like NITs/IIITs posed challenges on its branding.</p>
+
+      <p><b>ANSHUMAT Q.5: SLIET has been performing low in various rankings including NIRF for some years now. What plans the Institute has, to regain its glory?</b></p>
+      <p><b>Director:</b>Honest efforts to achieve objectives and parameters of ranking/accreditation are more important, which automatically result in good ranking. Focused efforts towards a few important points shall help to regain its glory-
+        <ol>
+          <li>Strengthening its unique mandate through re-structuring of ICD programs with more emphasis on practical/skill,</li>
+          <li>Development of an eco-system for focused research such as “Technology for Agriculture”, adopted recently as one of the focus area,</li>
+          <li>Focused emphasis on innovation, incubation and entrepreneurship activities,</li>
+          <li>To become multi-disciplinary institute under Category-II (i.e. Teaching Intensive University).</li>
+        </ol>
+      </p>
+
+      <p><b>ANSHUMAT Q.6: What are the major challenges for SLIET in the next five years?</b></p>
+      <p><b>Director:</b>Major challenges in today’s scenario are-
+        <ol>
+          <li>Implementation of multi-entry, multi-exit modular pattern in true spirit (i.e. with acceptability of exit option in practice),</li>
+          <li>Improving admission statistics keeping in view the alternatives available with aspirants amid rising number of technical institute in urban areas,</li>
+          <li>Improving skill and hence employability of its core courses i.e. ICD programs,</li>
+          <li>To expand its wings, to explore possibilities of National Education Policy NEP-2020,</li>
+          <li>To make it residential in true spirit for utilizing full potential of all.</li>
+        </ol>
+      </p>
+
+      <p><b>ANSHUMAT Q.7: What are your suggestions, to integrate quality at all levels of education/Research in SLIET?</b></p>
+      <p><b>Director:</b>I believe, following points may help to integrate quality at all levels-
+        <ol>
+          <li>Departments shall develop course specific Centre of Excellence/Skill Based Training Centre,</li>
+          <li>Liaison with industries for teaching specific courses, On the Job Training (OJT) and subsequent placement,</li>
+          <li>Fix achievable targets and put honest efforts to achieve them,</li>
+          <li>Promotion of research and consultancy activities,</li>
+          <li>Strengthen Alumni interaction for student mentoring and placement,</li>
+          <li>Strengthening student counselling/mentoring system,</li>
+          <li>Proactive involvement of all for the cause of their being in the institute.</li>
+        </ol>
+      </p>
+
+      <p><b>ANSHUMAT Q.8: Institute added a few feathers in its cap such as NBA Accreditation of all UG Programs, Awards by reputed agencies such as IE (I) and NITTTR Chandigarh. Would you please share some of the initiatives taken by you that gave good impetus in this direction?</b></p>
+      <p><b>Director:</b>A good work culture, team work, motivated employees are the key parameters for the success of any institute/organisation. I have tried to create the same in the institute. I believe, you can throw light on some of the initiatives taken.
+        <br>
+        <b>Anshumat:</b>Yes, sir.  A few noticeable initiatives taken in the recent past, ensured all-round growth of the institute:
+        <ol>
+          <li>Start of 'ANSHUMAT' Quarterly Newsletter of SLIET to upkeep record of activities conducted,</li>
+          <li>Introduction of Tutor Guardian and Student Mentor Scheme (TG/SMS) for strengthening student counselling system (multi-layer) for effective connect,</li>
+          <li>Introduction of EAA (Extra Academic Activity) for the holistic development of students,</li>
+          <li>Awards for the Meritorious students to promote competitiveness,</li>
+          <li>Holistic development of students through enhanced Student’s Club Activities,</li>
+          <li>Incentives for participation in Sports and Other Technical Activities,</li>
+          <li>Conduction of theme based Technical and Cultural and Social Festivals,</li>
+          <li>Start Celebration of Foundation Day of the Institute, to showcase our achievements and promotion of belongingness,</li>
+          <li>NBA accreditation of all 7 UG programs,</li>
+          <li>Installation of 1 MW Roof Top Solar Power Plant to Promote GREEN Energy,</li>
+          <li>Conduction of litigation free/transparent recruitment/promotion of teaching/non-teaching staff,</li>
+          <li>Establishment of IPR cell to promote patents and copyrights,</li>
+          <li>Increase outreach, inclusivity and collaborations through MoUs,</li>
+          <li>Strengthening of Internal Audit Cell to streamline the system</li>
+          <li>Observation of “No Motor Vehicle Day” and “Natural Light Day” for value addition and support “Fit India Movement” and “Save Environment”,</li>
+          <li>Bagged TEQIP-III resulted in following:
+            <ol type="i">
+              <li>Mentoring of NIT Uttarakhand under twinning arrangement,</li>
+              <li>Development of Central Computing Facility with 108 computes,</li>
+              <li>Development of multi-disciplinary research centres,</li>
+              <li>Development Centre for Automation for training/research,</li>
+            </ol>
+          </li>
+          <li>Conceptualisation of War Room to set targets and its execution strategies,</li>
+          <li>Student Solar Ambassador Workshop-2019 a first in the institute,</li>
+          <li>Financial support to Theme Based Students Projects, to promote experiential learning,</li>
+          <li>Initiation of SLIET Quality Publication Award (SQPA) and SLIET Research Project Awards (SRPA) to promote research environment,</li>
+          <li>Various initiatives to make Institute safe and secure place for students/ faculty/ residents during COVID-19,</li>
+          <li>Separation of Technical and Cultural Festivals, to bring quality participation in both,</li>
+          <li>Addition of Smart Classrooms in every academic block,</li>
+          <li>Renovation of Hostel for quality student life,</li>
+          <li>Development of Seating Arena and Renovation of Library Reading Room to attract students towards Library,</li>
+          <li>Excellence awards for faculty/staff instituted in different categories,</li>
+          <li>To invite Hon'ble Governor as Chief Guest of Annual Convocation, 1st time in 2019, in the history of SLIET and 2nd time in 2022,</li>
+          <li>Introduction of ERP for automation of academic activities,</li>
+          <li>Introduction of Computer Based Test (CBT) for admission,</li>
+          <li>Engagement of part time sports coaches to promote sports and fitness.</li>
+          <br>
+          The outcome is witnessed as:
+          <li>SLIET adorned with Outstanding Institution Award (Engineering College Category) for the year 2021, in the Northern Region,</li>
+          <li>SLIET has been awarded ‘Certificate of Appreciation’ for prestigious IE(I)-Engineering Education Excellence Award – 2022.</li>
+        </ol>
+      </p>
+
+      <p><b>ANSHUMAT Q.9: All the technical Institutes in the country are in the competition with each other for getting the best ranks ranking either on a global or the national level. Do you think that it is promoting or hampering the quality of technical education in India?</b></p>
+      <p><b>Director:</b>In my opinion it provides an opportunity to introspect, emphasize and improve its core strengths to be an ideal educational institute, as per its mandate.Honest efforts to achieve objectives and parameters of ranking/accreditation, will automatically ensure your identity and existence.</p>
+
+      <p><b>ANSHUMAT Q.10: What is your advice to SLIET students?</b></p>
+      <p><b>Director: </b>I persuade the students to:
+        <ul>
+          <li>Enjoy your learning and make effective use of campus life,</li>
+          <li>Identify and act as per your strength, accept and improve your weakness,</li>
+          <li>Set your goals and put honest efforts to achieve the same,</li>
+          <li>Come out of your comfort zone,</li>
+          <li>Set targets/challenges and experiment to fulfil them,</li>
+          <li>Make yourself skilled so as to be employable,</li>
+          <li>Focus on your professional development,</li>
+          <li>Keep yourself updated on Technology/ innovations,</li>
+          <li>Improve your soft skills,</li>
+          <li>Think positive,</li>
+          <li>Learn from your mistakes.</li>
+        </ul>
+        धैर्य के साथ प्रयास करें, समय आने पर आपको आपकी मंजिल अवश्य मिलेगी
+        <br>
+        <p><b>ANSHUMAT : Thank you so much Sir, for sparing a few moments from your busy schedule to have this valuable session with ANSHUMAT and speaking your mind on the issues relevant to growth of SLIET.</b></p>
+        <p style="text-align: center;">“PROUD TO BE PART OF TEAM SLIET”</p>>
+      </p>
+
+
+
+    </div>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
+  </body>
+</html>
