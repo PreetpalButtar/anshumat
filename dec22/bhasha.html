@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anshumat</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .w3-sidebar a {font-family: "Roboto", sans-serif}
+      body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+      .header {
+        overflow: hidden;
+        background-color: #f1f1f1;
+        padding: 20px 10px;
+      }
+
+      .header a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px; 
+        line-height: 25px;
+        border-radius: 4px;
+      }
+
+      .header a.logo {
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .header a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .header a.active {
+        background-color: dodgerblue;
+        color: white;
+      }
+
+      .header-right {
+        float: right;
+      }
+
+      @media screen and (max-width: 500px) {
+        .header a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+  
+        .header-right {   
+          float: none;
+        }
+      }
+
+      table, th, td {
+        width: 100%
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+
+      th, td {
+        background-color: #96D4D4;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+
+      tr:hover {background-color: #D6EEEE;}
+
+      /* Rounded border */
+      hr.rounded {
+        border-top: 8px solid #bbb;
+        border-radius: 5px;
+      }
+
+      .responsive {
+        width: 100%;
+        height: auto;
+      }
+
+      img.sticky {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+      }
+
+      * {box-sizing:border-box}
+
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+      }
+
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+    </style>
+  </head>
+  <body class="w3-content" style="max-width:1200px">
+    <div class="w3-container w3-text-grey" id="chit-chat">
+      <!-- <table>
+        <tr><th><b>Expert Talks/Seminars/Workshops/Conferences/STTPs/FDPs/Quizzes</b></th></tr>
+      </table>
+      <br> -->
+      <h3 class="w3-wide" align="center"><b>स्लाईट में भारतीय भाषा दिवस का आयोजन</b></h3>
+
+      <div style="text-align:center">
+        <img src="./images/bhasha.jpg">
+      </div>
+
+      <p>संत लौंगोवाल अभियांत्रिकी एवं प्रौद्योगिकी संस्थान, लौंगोवाल में दिनांक 11 दिसम्बर2022 , दिन रविवार को जगदीश चंद्र बोस सभागार में भारतीय भाषा दिवस मनाया गया।भारतीय भाषा दिवस समारोह का शुभारंभ समारोह के मुख्य अतिथि भारतीय वन सेवा में कार्यरत संगरूर के सम्भागीय वन अधिकारी डॉ मोनिका यादव, संस्थान के निदेशक प्रो शैलेन्द्र जैन,संस्थान की प्रथम महिला श्रीमति शोभना जैन,  अधिष्ठाता(छात्र कल्याण) प्रो राजेश कुमार, अधिष्ठाता (कर्मचारी एवं संकाय कल्याण) प्रो अजात शत्रु अरोड़ा, कुलसचिव श्री हरि मोहन अरोड़ा,  आयोजन समिति सदस्य प्रो आर के गुहा, डॉ माजिद, श्री जगदीश चंद, एवं गणमान्य अतिथियों, संकाय सदस्यों, कर्मचारियों तथा छात्र - छात्राओं द्वारा सर्वप्रथम आज़ादी के अमृतमहोत्सव के उपलक्ष में अंधकार पर प्रकाश की विजय के प्रतीक 75 दीपों का प्रज्वलन कर संस्थान के कुलगीत से हुआ। राजभाषा (हिन्दी) विकास समिति के अध्यक्ष डॉ राज कुमार यादव ने समिति द्वारा भारतीय भाषा दिवस के उपलक्ष में आयोजित किये गये प्रतियोगी कार्यक्रमों के साथ ही सितंबर को हिंदीमाह के रूप में मनाए गए प्रतियोगी कार्यक्रमों जैसे निबंध लेखन, कहानी लेखन, हिंदी टंकण, चित्रांकन, सुलेख,  काव्य पाठ, स्वरागिनी की सम्पूर्ण जानकारी दी। छात्रों ने सांस्कृतिक कार्यक्रम प्रस्तुत किया। प्रो आर के गुहा, डॉ माजिद प्रो अजात शत्रु अरोड़ा आदि ने बंगाली, उर्दू, हिंदी, मैथिली पंजाबी आदिभाषाओं में अपने विचारों को बोधगम्य ही नहीं बनाया, बल्कि समारोह को भारत की भाषायी विविधता के बीच सौहार्द का अनुपम संगम बना दिया।अधिष्ठता(छात्र कल्याण) प्रो राजेश कुमार ने छात्र छात्राओं का आह्वान किया कि वे जीवन की चुनौतियों को समझेंऔर उन्हें मात देने के लिए अनुशासित हो कर कार्य करें।तत्पश्चात भारतीय भाषा दिवस एवं हिन्दी दिवस के उपलक्ष में छात्र - छात्राओं, कर्मचारियों, संकाय सदस्यों व अधिकारियों के लिए आयोजित प्रतिस्पर्धी कार्यक्रमों के विजेता प्रतिभागियों को नकद पारितोषिक चेक के रूप में देकर सम्मानित किया गया।मुख्यअतिथि डॉ मोनिका यादव ने छात्र - छात्राओं को अपने अवलोकन क्षमता का उपयोग कर तथा अनुभव से सीख लेकर आत्मनिरीक्षण करते हुए बाधाओं व व्यक्तियों को कोसने के बजाए स्वयं की कमजोरियों को शक्ति में तब्दील करने की कोशिश करते हुए जीवन पथ पर कदम बढ़ाने का आह्वान किया और कबीर की व्यावहारिक स्थिति' तू कहता कागज की लेखी, मैं कहता आंखन की देखी।' की तर्ज पर उनके जीवन संघर्ष जनित सफलता के अनुभव की जानकारी से छात्र -छात्राओं के जीवन - पथ में आशा की नई किरण का विद्युततरंगों की तरह संचार हो गया।अपने अध्यक्षीय संबोधन में संस्थान के निदेशक प्रो शैलेंद्र जैन ने राष्ट्रीय शिक्षा नीति - 2022 के आलोक में मानव विकास में मातृभाषा, राष्ट्र भाषा एवं अंतरराष्ट्रीय भाषा की जरूरत,  महत्त्व व अनिवार्यता पर प्रकाश डाला और छात्रों को जानकारी दी ।इस समारोह में छात्र -छात्राएं, कर्मचारी, अधिकारी एवं आचार्य उपस्थित थे। धन्यवाद ज्ञापन श्री हरि मोहन अरोड़ा ने किया।</p>
+    </div>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
+  </body>
+</html>
